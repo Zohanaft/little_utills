@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
     install (Vue, options) {
         Vue.prototype.$debounce = function (fn, delay) {
             let timeout
