@@ -1,0 +1,9 @@
+{
+  "name": "debounce",
+  "version": "1.0.0",
+  "description": "little utills for vue",
+  "main": "debounce.js",
+  "repository": "git@github.com:Zohanaft/little_utills.git",
+  "author": "Zakhar <zax.osipov2010@yandex.ru>",
+  "license": "MIT"
+}
