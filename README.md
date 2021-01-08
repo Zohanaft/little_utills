@@ -1,6 +1,6 @@
 # little_utills
 
-h2 Install:
+Install:
 -----------------------------------
 ### yarn add https://github.com/Zohanaft/little_utills.git
 
