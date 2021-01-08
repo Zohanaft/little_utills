@@ -1,4 +1,4 @@
-export default {
+const Debounce =  {
     install (Vue, options) {
         Vue.prototype.$debounce = function (fn, delay) {
             let timeout
@@ -10,3 +10,5 @@ export default {
         }
     }
 }
+
+export default Debounce
