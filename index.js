@@ -5,7 +5,7 @@ module.exports = {
             return (function () {
                 const fnCall = () => { fn.apply(this, arguments) }
                 clearTimeout(timeout)
-                timeout = setTimeout(fnCall, ms)
+                timeout = setTimeout(fnCall, delay)
             })()
         }
     }
