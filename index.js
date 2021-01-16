@@ -3,7 +3,13 @@ module.exports = {
         Vue.prototype.$debounce = function (fn, delay) {
             let timeout
             return (function () {
-                const fnCall = () => { fn.apply(this, arguments) }
+                const fnCall
+                if (fn.apply != undefined) {
+                    fnCall = () => { fn.apply(this, arguments) }
+                }
+                else {
+                    fnCall = () => { fn }
+                }
                 clearTimeout(timeout)
                 timeout = setTimeout(fnCall, delay)
             })()
