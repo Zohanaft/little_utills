@@ -4,11 +4,11 @@ module.exports = {
             let timeout
             return (function () {
                 const fnCall = () => { 
-                    if (fn.apply) {
+                    try {
                         return fn.apply(this, arguments)
                     }
-                    else {
-                        return fn()
+                    catch (err) {
+                        return fn(this, arguments)
                     }
                 }
                 clearTimeout(timeout)
