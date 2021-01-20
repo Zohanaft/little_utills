@@ -8,7 +8,7 @@ module.exports = {
                         return fn.apply(this, arguments)
                     }
                     catch (err) {
-                        return fn(this, arguments)
+                        return fn
                     }
                 }
                 clearTimeout(timeout)
